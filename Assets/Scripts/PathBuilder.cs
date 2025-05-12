@@ -44,7 +44,7 @@ public class PathBuilder : MonoBehaviour
 
         for (int i = 0; i < _maxReflections; i++)
         {
-            RaycastHit2D[] hits = Physics2D.RaycastAll(currentPosition + direction * 0.01f, direction, _maxDistance);
+            RaycastHit2D[] hits = Physics2D.RaycastAll(currentPosition + direction * 0.001f, direction);
 
             if (hits.Length == 0)
             {
